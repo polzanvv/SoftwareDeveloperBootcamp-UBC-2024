@@ -1,9 +1,83 @@
-h1 {
-  padding: 15px;
+body {
+  background-color: rgba(184, 226, 252, 0.32);
+}
+header {
+  margin: 20px;
   display: flex;
   justify-content: center;
-}
 
+  h1 {
+    padding: 50px;
+    color: rgb(7, 1, 62);
+  }
+}
+#rounded-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.about {
+  #about_img {
+    width: 140px;
+    height: 130px;
+    border-radius: 130px / 100px 5px;
+    margin-left: 15%;
+  }
+  p {
+    padding-left: 50px;
+    margin-right: 6%;
+    color: rgb(7, 1, 62);
+
+    #bigger {
+      font-size: larger;
+    }
+  }
+}
+hr {
+  border-width: 3px;
+}
+#skill {
+  display: flex;
+  align-items: center;
+  color: rgb(7, 1, 62);
+
+  .strength1 {
+    flex: 70%;
+    margin-right: 15px;
+  }
+  .strength2 {
+    flex: 10%;
+
+    .skills_img {
+      width: 150px;
+      height: 140px;
+      border-radius: 5px 100px / 130px;
+    }
+  }
+}
+#interest {
+  display: flex;
+  align-items: center;
+
+  .interest_logo {
+    width: 150px;
+    height: 140px;
+    border-radius: 130px / 100px 5px;
+    float: left;
+    padding-left: 2%;
+    padding-right: 2%;
+
+    p {
+      float: right;
+      color: rgb(7, 1, 62);
+      padding-left: 10%;
+      #bigger {
+        font-size: large;
+      }
+    }
+  }
+}
 button {
   color: rgb(0, 42, 255);
 }
