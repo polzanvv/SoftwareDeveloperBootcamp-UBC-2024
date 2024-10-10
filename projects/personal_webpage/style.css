@@ -1,45 +1,40 @@
 body {
   background-color: rgba(184, 226, 252, 0.32);
-  font-family: "Arial", sans-serif;
+  font-family: "Times New Roman";
   font-weight: lighter;
-}
-
-#bigger {
-  font-size: larger;
-}
-
-p,
-h1,
-#skill {
-  text-align: justify;
-  color: rgb(7, 1, 62);
+  padding-left: 350px;
 }
 
 header {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 
-  h1 {
-    padding: 50px;
-    font-size: 2em;
+  .name {
+    font-size: 850%;
+    text-align: end;
+    margin-right: 30px;
   }
 
-  #rounded-img {
-    width: 200px;
-    height: 200px;
+  #logo-pic {
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
+    left: 0;
+    top: 30px;
+    margin-left: 30px;
   }
 }
 
-.nav li {
+.nav {
+  text-align: center;
   color: rgba(184, 226, 252, 0.32);
-  display: inline;
-  margin: 6%;
 
+  .link {
+    display: table-cell;
+    
+  }
 }
-
 .about {
   #about_img {
     width: 140px;
@@ -55,6 +50,10 @@ header {
 
 hr {
   border-width: 3px;
+}
+
+#bigger {
+  font-size: 1000%;
 }
 
 #skill {
@@ -93,9 +92,28 @@ hr {
   }
 }
 
-button {
+.container {
+  padding: 20px;
+}
+h4 {
+  margin-bottom: 1px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 1px;
+  border: 1px solid #d5d2d2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+button,
+input {
   color: rgb(0, 42, 255);
 }
+
 address {
   padding: 15px;
   display: flex;

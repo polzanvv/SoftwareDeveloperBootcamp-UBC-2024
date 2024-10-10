@@ -7,21 +7,22 @@
   </head>
   <body>
     <header>
-      <h1><em>Polina</em></h1>
-      <img
-        id="rounded-img"
-        src="/Users/asibiriakov/Desktop/HTML/Images/Logo-personal-page.png"
-        alt="logo"
-      />
-      <h1><em>Sibiriakova</em></h1>
+      <div>
+        <img
+          id="logo-pic"
+          src="/Users/asibiriakov/Desktop/HTML/Images/Logo-personal-page.png"
+          alt="logo"
+        />
+      </div>
+      <div class="name"><strong>&#8226 SIBIRIAKOVA &#8226 POLINA</strong></div>
     </header>
     <div class="nav">
       <nav>
         <ul>
-          <li><a href="#about_img">About Me</a></li>
-          <li><a href="#skill">Skills & Strengths</a></li>
-          <li><a href="#interest_logo">Interests</a></li>
-          <li><a href="#media-queries">Contact Information</a></li>
+          <li class="link"><a href="#about_img">About Me</a></li>
+          <li class="link"><a href="#skill">Skills & Strengths</a></li>
+          <li class="link"><a href="#interest_logo">Interests</a></li>
+          <li class="link"><a href="#container">Contact Form</a></li>
         </ul>
       </nav>
     </div>
@@ -105,11 +106,33 @@
         hackathons to sharpen my skills.
       </p>
     </section>
+    <hr />
+    <h4>Contact Form</h4>
+    <div class="container">
+      <form>
+        <label>First Name</label>
+        <input type="text" placeholder="Your name.." />
 
-    <button>Like!</button>
+        <label>Last Name</label>
+        <input type="text" placeholder="Your last name.." />
 
-    <p>Contact the author of this page:</p>
+        <label>Country</label>
+        <select>
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
 
+        <label>Subject</label>
+        <textarea
+          placeholder="Write something.."
+          style="height: 80px"
+        ></textarea>
+
+        <input type="submit" value="Submit" />
+        <button>Like!</button>
+      </form>
+    </div>
     <address>
       <a href="mailto:psibiriakova@gmail.com">psibiriakova@gmail.com</a>
       <p>+1 (234) 567-8910</p>
